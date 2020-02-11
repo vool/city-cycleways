@@ -1,7 +1,7 @@
 <template>
   <div class='absolute no-webgl'>
     <h3>WebGL is not enabled :(</h3>
-    <p>This website renders millions of roads at once.</p>
+    <p>This website renders millions of cycleways at once.</p>
     <p>
       To render this amount of data fast, the website uses <a href='https://get.webgl.org/'>WebGL</a>,
       which seem to be not supported by the device that you are using.

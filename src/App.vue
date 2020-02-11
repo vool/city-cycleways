@@ -68,12 +68,12 @@
 
         <h3>About</h3>
         <div>
-          <p>This website was created by <a href='https://twitter.com/anvaka' target='_blank'>@anvaka</a>.
-          It downloads roads from OpenStreetMap and renders them with WebGL.
+          <p>This website was created by <a href='https://twitter.com/anvaka' target='_blank'>@anvaka</a> and forked by <a href='https://twitter.com/tweetphelan' target='_blank'>@tweetphelan</a>.
+          It downloads cycleways from OpenStreetMap and renders them with WebGL.
           </p>
           <p>
-           You can find the entire <a href='https://github.com/anvaka/city-roads'>source code here</a>. 
-           If you love this website you can also <a href='https://www.paypal.com/paypalme2/anvakos/3'>buy me a coffee</a>, but you don't have to!
+           You can find the entire <a href='https://github.com/vool/city-cycleways'>source code here</a>.
+           If you love this website you can also <a href='https://www.paypal.com/paypalme2/anvakos/3'>buy @anvaka a coffee</a>, but you don't have to!
           </p>
         </div>
       </div>

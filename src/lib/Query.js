@@ -18,6 +18,8 @@ export default class Query {
    */
   static Road = 'way[highway]';
 
+  static Bike =  'way[highway=cycleway]';
+
   /**
    * More accurate representation of the roads by @RicoElectrico.
    */

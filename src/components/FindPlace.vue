@@ -1,8 +1,8 @@
 <template>
 <div class='find-place' :class='{centered: boxInTheMiddle }'>
   <div v-if='boxInTheMiddle'>
-    <h3 class='site-header'>city roads</h3>
-    <p class='description'>This website renders every single road within a city</p>
+    <h3 class='site-header'>city cycleways</h3>
+    <p class='description'>This website renders every single cycleway within a city</p>
   </div>
   <form v-on:submit.prevent="onSubmit" class='search-box'>
       <input class='query-input' v-model='enteredInput' type='text' placeholder='Enter a city name to start' ref='input'>
@@ -14,7 +14,7 @@
   <div class='results' v-if='!loading'>
     <div v-if='suggestionsLoaded && suggestions.length' class='suggestions shadow'>
       <div class='prompt message'>
-        <div>Select boundaries below to download all roads within</div>
+        <div>Select boundaries below to download all cycleways within</div>
         <div class='note'>large cities may require 200MB+ of data transfer and a powerful device</div>
       </div>
       <ul>
@@ -32,7 +32,7 @@
       Didn't find matching cities. Try a different query?
     </div>
     <div v-if='noRoads' class='no-results message shadow'>
-      Didn't find any roads. Try a different query?
+      Didn't find any cycleways. Try a different query?
     </div>
   </div>
   <div v-if='error' class='error message shadow'>
@@ -231,7 +231,7 @@ export default {
       // it may take a while to load data. 
       this.restartLoadingMonitor();
       Query.runFromOptions(new LoadOptions({
-        wayFilter: Query.Road,
+        wayFilter: Query.Bike,
         areaId: suggestion.areaId,
         bbox: suggestion.bbox
       }), this.generateNewProgressToken())
